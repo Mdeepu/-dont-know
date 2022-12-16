@@ -5,12 +5,12 @@ metadata:
     kubernetes.io/ingress.class: haproxy-haproxy
     haproxy.org/path-rewrite: "/"
   name: nginx-ingress
-  namespace: ic-ws-018
+  namespace: ic-ws-003
 spec:
   rules:
    - http:
       paths:
-      - path: /ic-ws-018
+      - path: /ic-ws-003
         pathType: Prefix
         backend:
           service:
